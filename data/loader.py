@@ -39,6 +39,8 @@ class DynamicBatchSampler(Sampler):
   ):
     '''
     set epoch for distrivbuted training
+    Args:
+      epoch: current epoch count
     '''
     self.epoch = epoch
 
@@ -190,6 +192,9 @@ class DataLoader:
     '''
     Args:
       batch: batch data list, every single element: (data, target/label)
+    Returns:
+      data: tensor type data
+      targets: tensor type targets/labels
     '''
     data, targets = zip(*batch)
 
