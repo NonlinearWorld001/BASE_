@@ -1,4 +1,4 @@
-from module.MLP import MLP
+from src.module.MLP import MLP
 import torch
 
 
